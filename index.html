@@ -237,83 +237,87 @@
 
       <!-- Slider  -->
       <div
-        class="carousel w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg relative"
+        style="
+          background-image: url('images/banner.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        "
+        class="relative w-full max-w-6xl md:mt-10 mt-6 mx-auto rounded-xl p-10 shadow-lg text-white relative"
       >
-        <!-- Slide 1 -->
-        <div id="slide1" class="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-            class="w-full object-cover"
-          />
+        <!-- Carousel Content Slides -->
+        <div class="carousel w-full">
+          <div class="absolute inset-0 bg-black/70 z-10"></div>
+          <!-- Slide 1 -->
           <div
-            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between"
+            id="slide1"
+            class="z-20 carousel-item w-full flex flex-col items-center justify-center text-center space-y-4 py-10"
           >
-            <a href="#slide4" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
+            <div class="avatar">
+              <div
+                class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2"
+              >
+                <img
+                  src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp"
+                />
+              </div>
+            </div>
+            <h2 class="text-2xl">Doland Tramp</h2>
+            <p>UI/UX Designer</p>
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia, looked up one of
+              the more obscure Latin words, consectetur.
+            </p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            id="slide2"
+            class="z-20 carousel-item w-full flex flex-col items-center justify-center text-center space-y-4 py-10"
+          >
+            <div class="avatar">
+              <div
+                class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2"
+              >
+                <img
+                  src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp"
+                />
+              </div>
+            </div>
+            <h2 class="text-2xl">N. Mudi</h2>
+            <p>Web Developer</p>
+            <p class="text-regular">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia, looked up one of
+              the more obscure Latin words, consectetur.
+            </p>
           </div>
         </div>
 
-        <!-- Slide 2 -->
-        <div id="slide2" class="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-            class="w-full object-cover"
-          />
-          <div
-            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between"
-          >
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
+        <!-- Fixed Navigation Arrows -->
+        <div class="absolute left-4 top-1/2 -translate-y-1/2 z-10">
+          <a href="#slide1" class="btn btn-circle bg-white text-black">❮</a>
+        </div>
+        <div class="absolute right-4 top-1/2 -translate-y-1/2 z-10">
+          <a href="#slide2" class="btn btn-circle bg-white text-black">❯</a>
         </div>
 
-        <!-- Slide 3 -->
-        <div id="slide3" class="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-            class="w-full object-cover"
-          />
-          <div
-            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between"
-          >
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide4" class="btn btn-circle">❯</a>
-          </div>
+        <!-- Bottom Indicators -->
+        <div class="flex justify-center mt-6 space-x-3 z-10 relative">
+          <a
+            href="#slide1"
+            class="w-3 h-3 bg-white rounded-full inline-block"
+          ></a>
+          <a
+            href="#slide2"
+            class="w-3 h-3 bg-white rounded-full inline-block"
+          ></a>
         </div>
-
-        <!-- Slide 4 -->
-        <div id="slide4" class="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-            class="w-full object-cover"
-          />
-          <div
-            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between"
-          >
-            <a href="#slide3" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bottom indicators -->
-      <div class="flex justify-center mt-4 space-x-2">
-        <a
-          href="#slide1"
-          class="w-3 h-3 bg-gray-400 rounded-full inline-block"
-        ></a>
-        <a
-          href="#slide2"
-          class="w-3 h-3 bg-gray-400 rounded-full inline-block"
-        ></a>
-        <a
-          href="#slide3"
-          class="w-3 h-3 bg-gray-400 rounded-full inline-block"
-        ></a>
-        <a
-          href="#slide4"
-          class="w-3 h-3 bg-gray-400 rounded-full inline-block"
-        ></a>
       </div>
     </section>
   </body>
